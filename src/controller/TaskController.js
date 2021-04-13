@@ -159,6 +159,21 @@ class TaskController {
             return res.status(500).json(error);
         });
     }
+
+    async ano(req, res) {
+        await TaskModel
+        .find({
+            'macaddress': { '$in' : req.params.macaddress},
+            'when': {'$gte': startOfYear(current), '$lte': endOfYear(current)} // filtrar "$gte" => data maior ou igual / "$lte" menor ou igual
+        })
+        .sort('when')
+        .then(response => {
+            return res.status(200).json(response);
+        })
+        .catch(error => {
+            return res.status(500).json(error);
+        });
+    }
 }
 
 module.exports = new TaskController();
