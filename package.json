@@ -6,7 +6,7 @@
     "start": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriel Teixeira",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "date-fns": "^2.20.1",
     "express": "^4.17.1",
-    "mongoose": "^5.12.3",
+    "mongoose": "^5.12.14",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5"
   },
