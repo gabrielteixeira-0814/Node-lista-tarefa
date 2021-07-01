@@ -10,16 +10,18 @@ const { startOfDay,
      } = require('date-fns');
  // pegar a data do começo do dia até o final / pegar o primeiro dia e data da semena e final /
 
-const current = new Date();
+const current = new Date(); // Data e hora atual
 
 class TaskController {
 
     async create(req, res) {
         const task = new TaskModel(req.body);
-        await task.save().then(response => {
+        await task.save().then(response => 
+            {
             return res.status(200).json(response);
-        }).catch(error => {
-            console.log('ola');
+        }
+        ).catch(error => {
+            console.log('Error');
             return res.status(500).json(error);
         });
     }
@@ -56,7 +58,7 @@ class TaskController {
             }
         })
         .catch(error => {
-            return res.status(500).json(error);
+            return res.status(404).json({error: 'tarefa não encontrada'});
         })
     }
     
@@ -93,7 +95,7 @@ class TaskController {
         })
         .sort('when') // retorna a lista com as datas organizadas
         .then(response => {
-            return res.status(200).json(response);
+            return res.status(200).json(response);  
         })
         .catch(error => {
             return res.status(500).json(error);

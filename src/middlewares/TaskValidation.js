@@ -17,9 +17,6 @@ TaskValidation = async (req, res, next) =>{
     else if(!when) {
         return res.status(400).json({ error: 'A data e hora é obrigatório! '});
     }
-    else if(isPast(new Date(when))) {
-        return res.status(400).json({ error: 'Escolha uma data e hora futura! '});
-    }
     else {
         next();
     }
