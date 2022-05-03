@@ -1,7 +1,6 @@
-# Node-lista-tarefa
 <h1 align="center">
     <img height="80" src="https://img.icons8.com/external-filled-outline-geotatah/64/000000/external-product-corporate-image-and-brand-management-filled-outline-filled-outline-geotatah-2.png" />
-    <p>Sales site</p>
+    <p>Node-lista-tarefa</p>
 </h1>
 
 <h1 align="center">Imagem
@@ -11,17 +10,25 @@
 
 ## 🚨 About
 
-
 **Sales site** is a sales site created with the **LARAVEL** framework for the purpose of study and development with this technology, where you can register any type of product, and with an administration area and dashboard of the most sold products. 
 
 
 ## 🔨 Tools
 
-- NodeJs
-- JavaScript
-- MongoDB
+- [NodeJs](https://nodejs.org/en/)
+- [JavaScript]()
+- [MongoDB](https://www.mongodb.com/try/download/community)
 
-## 👍 How Contribute
+## Bibliotecas/Frameworks
+
+- [Express](https://expressjs.com/)
+
+### Requisitos
+
+Have installed at least one Node package manager, [Npm](https://nodejs.org/en/) or [Yarn](https://yarnpkg.com/).
+
+
+## 👍 Use
 
 ```bash
     # Install NodeJs
@@ -40,7 +47,7 @@
 
 ```bash
     # Install dependencies
-    $ npm install
+    $ `npm install` or `yarn install`
 ```
 
 ```bash
@@ -49,11 +56,16 @@
 ```
 
 ```bash
-    # para iniciar o servidor no endereço:
-    $ php artisan migrate --seed
+    # To start the server at address: http://localhost:3333/task
+    $ yarn start
 ```
 
-```bash
-    # This command will start a development server at http://localhost:8000
-    $ php artisan serve
-```
+### Rotas da Aplicação
+
+- **`POST /task`**: Rota para cadastrar uma nova tarefa.
+
+- **`GET /task/filter/all/{macaddress}`**: Rota para listar todas as suas tarefas cadastradas de acordo com seu macaddress.
+
+- **`PUT /task/:id`**: Rota para deletar uma tarefa.
+
+- **`DELETE /task/:id`**: Rota para deletar uma tarefa.
