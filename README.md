@@ -1,16 +1,11 @@
 <h1 align="center">
-    <img height="80" src="https://img.icons8.com/external-filled-outline-geotatah/64/000000/external-product-corporate-image-and-brand-management-filled-outline-filled-outline-geotatah-2.png" />
-    <p>Node-lista-tarefa</p>
+    <img height="80" src="https://img.icons8.com/material-rounded/96/000000/api-settings.png" />
+    <p>API Node-lista-tarefa</p>
 </h1>
-
-<h1 align="center">Imagem
-    <img src="" />
-</h1>
-
 
 ## 🚨 About
 
-**Sales site** is a sales site created with the **LARAVEL** framework for the purpose of study and development with this technology, where you can register any type of product, and with an administration area and dashboard of the most sold products. 
+**Node-lista-tarefa** It is a user task list API, where using the cell phone's macaddress you register the day-to-day tasks and only you have access to your tasks. 
 
 
 ## 🔨 Tools
@@ -19,7 +14,7 @@
 - [JavaScript]()
 - [MongoDB](https://www.mongodb.com/try/download/community)
 
-## Bibliotecas/Frameworks
+## Libraries/Frameworks
 
 - [Express](https://expressjs.com/)
 
@@ -60,12 +55,12 @@ Have installed at least one Node package manager, [Npm](https://nodejs.org/en/) 
     $ yarn start
 ```
 
-### Rotas da Aplicação
+### Application Routes
 
 - **`POST /task`**: Rota para cadastrar uma nova tarefa.
 
-- **`GET /task/filter/all/{macaddress}`**: Rota para listar todas as suas tarefas cadastradas de acordo com seu macaddress.
+- **`GET /task/filter/all/{macaddress}`**: Route to list all your registered tasks according to their macaddress.
 
-- **`PUT /task/:id`**: Rota para deletar uma tarefa.
+- **`PUT /task/:id`**: Route to delete a task.
 
-- **`DELETE /task/:id`**: Rota para deletar uma tarefa.
+- **`DELETE /task/:id`**: Route to delete a task.
