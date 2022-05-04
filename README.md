@@ -57,7 +57,7 @@ Have installed at least one Node package manager, [Npm](https://nodejs.org/en/) 
 
 ### Application Routes
 
-- **`POST /task`**: Rota para cadastrar uma nova tarefa.
+- **`POST /task`**: Route to register a new task.
 
 - **`GET /task/filter/all/{macaddress}`**: Route to list all your registered tasks according to their macaddress.
 
