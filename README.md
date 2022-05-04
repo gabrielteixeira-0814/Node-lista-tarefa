@@ -23,7 +23,7 @@
 Have installed at least one Node package manager, [Npm](https://nodejs.org/en/) or [Yarn](https://yarnpkg.com/).
 
 
-## 👍 Use
+## 👨‍💻 How to Setup
 
 ```bash
     # Install NodeJs
@@ -64,3 +64,12 @@ Have installed at least one Node package manager, [Npm](https://nodejs.org/en/) 
 - **`PUT /task/:id`**: Route to delete a task.
 
 - **`DELETE /task/:id`**: Route to delete a task.
+
+
+## 📝 License
+
+This project is under the MIT license. See the file <a href="https://github.com/gabrielteixeira-0814/Node-lista-tarefa/blob/main/LICENCE">LICENCE</a> for more details.
+
+---
+
+<p align="center">Created by Gabriel Teixeira</p>
